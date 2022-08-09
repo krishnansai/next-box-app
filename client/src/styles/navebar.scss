@@ -1,0 +1,50 @@
+@import "./variable.scss";
+
+.navbar {
+  z-index: 20 !important;
+  align-items: baseline !important;
+  background-color: $dominant !important;
+  position: sticky !important;
+  box-shadow: #00000066 1px 2px 3px 0.4px;
+
+  .container {
+    div {
+      align-items: baseline !important;
+    }
+  }
+}
+
+header {
+  // font-family: "Roboto Slab", serif;
+  background-color: $dominant !important;
+  display: flex;
+  font-weight: 700 !important;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logout {
+  background-color: red;
+  color: white;
+  padding: 6px;
+  border-radius: 10px;
+  font-weight: 700 !important;
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 36%);
+
+  &:hover {
+    color: white;
+    box-shadow: 2px 2px 8px rgba(185, 45, 45, 0.36);
+    transition: all 0.3s ease-out;
+  }
+}
+
+.logo {
+  color: white !important;
+
+  &:hover {
+    color: rgb(201, 188, 188) !important;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+  }
+}

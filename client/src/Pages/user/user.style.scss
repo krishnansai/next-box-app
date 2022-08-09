@@ -1,0 +1,68 @@
+@import "../../styles/variable.scss";
+
+#CartSingleProduct {
+  width: 60%;
+  background-color: $dominant !important;
+  padding: 30px;
+  font-size: 0.5rem;
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  color: white;
+  margin-bottom: 20px;
+
+  img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  &:hover {
+    transform: scale(1.01);
+    background-color: rgb(83, 87, 92);
+    // transition: all 1s ease-out;
+    cursor: pointer;
+  }
+}
+
+.chatbotcontainer {
+  background-color: black;
+  padding: 10px;
+  border-radius: 15px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+  }
+}
+
+#modal-custom {
+  border-radius: 20px;
+
+  .modal-content {
+    color: white;
+    background-color: #1b1b1b !important;
+    padding: 20px;
+    border-radius: 20px;
+
+    label {
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 180%;
+    }
+
+    button {
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}
